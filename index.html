@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP - MATA MOSQUITO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body onresize="screenAdjust()">
+
+    <div class="panel">
+        <div class="life">
+            <img id="life1" src="/assets/coracao_cheio.png">
+            <img id="life2" src="/assets/coracao_cheio.png">
+            <img id="life3" src="/assets/coracao_cheio.png">
+        </div>
+
+        <div class="stopwatch">
+            Tempo restante: <span id="stopwatch"></span>
+        </div>
+    </div>
+
+    
+    <script>
+        document.getElementById('stopwatch').innerHTML = time
+
+        var newMosquito = setInterval(function() {
+            randomPosition()
+        }, newTimeMosquito)
+    </script>
+</body>
+</html>
